@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-D0 Listt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+
+  <div class="container">
+    <div class="todo-app">
+      <h2>To-DO List <img src="images/icon.png" /></h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your text" />
+        <button onclick="addTask()">Add</button>
+      </div>
+
+      
+      <div class="filter-buttons">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('active')">Active</button>
+        <button onclick="filterTasks('done')">Done</button>
+        <button onclick="clearCompleted()">Clear</button>
+      </div>
+
+      <ul id="list-container">
+        
+      </ul>
+    </div>
+  </div>
+
+ 
+  <div class="floating-icons">
+     <div class="floating-icon" style="left: 10%; animation-delay: 0s;">🖊️</div>
+    <div class="floating-icon" style="left: 30%; animation-delay: 4s;">🛒</div>
+    <div class="floating-icon" style="left: 50%; animation-delay: 8s;">📘</div>
+    <div class="floating-icon" style="left: 70%; animation-delay: 2s;">🖊️</div>
+    <div class="floating-icon" style="left: 90%; animation-delay: 6s;">📘</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
